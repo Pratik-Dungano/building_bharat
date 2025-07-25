@@ -13,7 +13,7 @@ export default function TestimonialCard() {
                   Student to Social Impact Leader
                 </h3>
                 <p className="text-base lg:text-lg text-gray-600 font-medium leading-relaxed mb-8">
-                  Building Bharat transformed the way I learn and think. With hands on projects, expert mentorship, and constant support, I discovered my leadership potential. I never imagined I'd lead initiatives in my own town while learning from top mentors across India.The journey wasn't easy, but the Building Bharat team made it achievable every step, every doubt, every win was celebrated. If you're serious about growing and giving back to India, this is where you start.
+                  Building Bharat transformed the way I learn and think. With hands on projects, expert mentorship, and constant support, I discovered my leadership potential. I never imagined I&#39;d lead initiatives in my own town while learning from top mentors across India. The journey wasn&#39;t easy, but the Building Bharat team made it achievable every step, every doubt, every win was celebrated. If you&#39;re serious about growing and giving back to India, this is where you start.
                 </p>
                 <div className="text-xl lg:text-2xl text-gray-700">
                   <span className="font-bold text-orange-500">Priya Sharma</span>

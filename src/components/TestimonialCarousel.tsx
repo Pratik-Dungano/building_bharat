@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Testimonial {
   image: string;
@@ -21,9 +22,11 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({ testimonials 
             key={idx}
             className="bg-white rounded-2xl shadow-lg flex flex-col md:flex-row items-center md:items-start min-w-[340px] max-w-[400px] p-6"
           >
-            <img
+            <Image
               src={testimonial.image}
               alt={testimonial.name}
+              width={80}
+              height={80}
               className="w-20 h-20 rounded-xl object-cover mb-4 md:mb-0 md:mr-6"
             />
             <div className="flex-1">
