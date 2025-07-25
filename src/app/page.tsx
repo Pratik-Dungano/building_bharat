@@ -4,11 +4,6 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import TestimonialCard from '@/components/TestimonialCard';
 import TargetAudienceCards from '@/components/TargetAudienceCards';
-import FeatureCards from '@/components/FeatureCards';
-import PartnerNetwork from '@/components/PartnerNetwork';
-import StatsSection from '@/components/StatsSection';
-import ContactSection from '@/components/ContactSection';
-import Footer from '@/components/Footer';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
