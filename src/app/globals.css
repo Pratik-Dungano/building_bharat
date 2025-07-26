@@ -58,3 +58,28 @@
     font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
   }
 }
+
+@layer utilities {
+  .animate-scroll-left {
+    animation: scroll-left 40s linear infinite;
+  }
+
+  .animation-pause {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.333%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .animate-scroll-left {
+      animation: scroll-left 25s linear infinite;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
+import LogoCarousel from '@/components/LogoCarousel';
 import TestimonialCard from '@/components/TestimonialCard';
 import TargetAudienceCards from '@/components/TargetAudienceCards';
 import { useState, useEffect } from 'react';
@@ -47,6 +48,13 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50">
       <Header />
       <HeroSection />
+
+      {/* Logo Carousel Section */}
+      <section className="py-12 px-6">
+        <div className="container mx-auto max-w-7xl">
+          <LogoCarousel />
+        </div>
+      </section>
 
       {/* Stories That Inspire Section */}
       <section className="py-20 px-6">
