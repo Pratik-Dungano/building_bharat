@@ -41,34 +41,34 @@ export default function TargetAudienceCards() {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-12 md:py-20 bg-white">
+      <div className="container mx-auto px-4 md:px-6">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-teal-900 mb-4">
+        <div className="text-center mb-8 md:mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-teal-900 mb-3 md:mb-4">
             Who Is This Initiative For?
           </h2>
-          <p className="text-xl text-gray-500">
+          <p className="text-lg md:text-xl text-gray-500 px-4">
             Perfect for Aspiring Political and policy professionals from all Backgrounds
           </p>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-x-12 justify-center max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 justify-center max-w-6xl mx-auto">
           {cards.map((card, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl border border-gray-200 w-64 min-h-64 flex flex-col items-center justify-center text-center shadow-lg hover:shadow-xl transition-shadow p-7"
+              className="bg-white rounded-2xl md:rounded-3xl border border-gray-200 w-full max-w-sm mx-auto min-h-56 md:min-h-64 flex flex-col items-center justify-center text-center shadow-lg hover:shadow-xl transition-shadow p-6 md:p-7"
             >
               <div className="flex justify-center mb-3">
-                <div className="w-20 h-20 flex items-center justify-center">
+                <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
                   {card.icon}
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-[#184C43] mb-1">
+              <h3 className="text-lg md:text-xl font-semibold text-[#184C43] mb-2">
                 {card.title}
               </h3>
-              <p className="text-gray-600 text-base mt-1">
+              <p className="text-gray-600 text-sm md:text-base mt-1">
                 {card.description}
               </p>
             </div>

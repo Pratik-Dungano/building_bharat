@@ -98,18 +98,18 @@ export function LogoCarousel() {
   const extendedLogos = [...logos, ...logos, ...logos];
 
   return (
-    <div className="w-full relative overflow-hidden bg-transparent py-8 md:py-16">
+    <div className="w-full relative overflow-hidden bg-transparent py-6 md:py-8 lg:py-16">
       {/* Blur gradients on the sides */}
-      <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-gray-50 via-gray-50 to-transparent z-10 pointer-events-none" />
-      <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-gray-50 via-gray-50 to-transparent z-10 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-8 md:w-16 lg:w-32 bg-gradient-to-r from-gray-50 via-gray-50 to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-8 md:w-16 lg:w-32 bg-gradient-to-l from-gray-50 via-gray-50 to-transparent z-10 pointer-events-none" />
 
       {/* Main scrolling container */}
       <div className="relative group">
-        <div className="flex animate-scroll-left group-hover:animation-pause gap-2 md:gap-4 w-max">
+        <div className="flex animate-scroll-left group-hover:animation-pause gap-2 md:gap-3 lg:gap-4 w-max">
           {extendedLogos.map((logo, index) => (
             <div
               key={`${logo.id}-${index}`}
-              className={`flex items-center justify-center min-w-[100px] md:min-w-[126px] h-[40px] md:h-[52px] rounded-[8px] md:rounded-[10px] border border-[rgba(0,70,68,0.47)] px-2 md:px-3 py-1 md:py-2 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:border-[#004644] hover:z-10 relative ${
+              className={`flex items-center justify-center min-w-[80px] sm:min-w-[100px] md:min-w-[120px] lg:min-w-[126px] h-[32px] sm:h-[40px] md:h-[48px] lg:h-[52px] rounded-[6px] sm:rounded-[8px] md:rounded-[10px] border border-[rgba(0,70,68,0.47)] px-1.5 sm:px-2 md:px-3 py-1 md:py-2 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:border-[#004644] hover:z-10 relative ${
                 logo.highlight
                   ? 'bg-[#DDD4D4] shadow-sm'
                   : 'bg-white hover:bg-gray-50'

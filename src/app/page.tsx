@@ -50,39 +50,39 @@ export default function Home() {
       <HeroSection />
 
       {/* Logo Carousel Section */}
-      <section className="py-12 px-6">
+      <section className="py-8 md:py-12 px-4 md:px-6">
         <div className="container mx-auto max-w-7xl">
           <LogoCarousel />
         </div>
       </section>
 
       {/* Stories That Inspire Section */}
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-20 px-4 md:px-6">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-4xl font-bold text-teal-900 text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-teal-900 text-center mb-8 md:mb-16">
             Stories That Inspire
           </h2>
           <div className="relative max-w-6xl mx-auto">
-            <div className="bg-white rounded-3xl shadow-lg p-8 lg:p-12">
-              <div className="grid lg:grid-cols-2 gap-8 items-center">
-                <div className="space-y-6">
-                  <h3 className="text-2xl lg:text-3xl font-medium text-gray-800">
+            <div className="bg-white rounded-2xl md:rounded-3xl shadow-lg p-6 md:p-8 lg:p-12">
+              <div className="grid lg:grid-cols-2 gap-6 md:gap-8 items-center">
+                <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-800">
                     {testimonials[currentTestimonial].title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-lg">
+                  <p className="text-gray-600 leading-relaxed text-base md:text-lg">
                     {testimonials[currentTestimonial].content}
                   </p>
-                  <div className="space-y-2">
-                    <p className="font-bold text-xl text-orange-500">
+                  <div className="space-y-1 md:space-y-2">
+                    <p className="font-bold text-lg md:text-xl text-orange-500">
                       {testimonials[currentTestimonial].name}
                     </p>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-sm md:text-base">
                       {testimonials[currentTestimonial].role}
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-center">
-                  <div className="w-80 h-96 bg-gray-200 rounded-3xl overflow-hidden">
+                <div className="flex justify-center order-1 lg:order-2">
+                  <div className="w-full max-w-sm md:w-80 h-64 md:h-80 lg:h-96 bg-gray-200 rounded-2xl md:rounded-3xl overflow-hidden">
                     <img
                       src={testimonials[currentTestimonial].image}
                       alt={testimonials[currentTestimonial].name}
@@ -92,11 +92,11 @@ export default function Home() {
                 </div>
               </div>
               {/* Progress Indicators */}
-              <div className="flex justify-center space-x-3 mt-8">
+              <div className="flex justify-center space-x-2 md:space-x-3 mt-6 md:mt-8">
                 {testimonials.map((_, index) => (
                   <button
                     key={index}
-                    className={`w-24 h-2 rounded-full transition-colors ${
+                    className={`w-16 md:w-24 h-1.5 md:h-2 rounded-full transition-colors ${
                       index === currentTestimonial ? 'bg-gray-800' : 'bg-gray-300'
                     }`}
                     onClick={() => setCurrentTestimonial(index)}

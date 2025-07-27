@@ -77,9 +77,29 @@
     }
   }
 
-  @media (max-width: 768px) {
+  /* Logo carousel animation for all devices */
+  .animate-scroll-left {
+    animation: scroll-left 40s linear infinite;
+  }
+
+  /* Mobile animations - faster */
+  @media (max-width: 640px) {
+    .animate-scroll-left {
+      animation: scroll-left 20s linear infinite;
+    }
+  }
+
+  /* Tablet animations - medium speed */
+  @media (min-width: 641px) and (max-width: 1024px) {
     .animate-scroll-left {
       animation: scroll-left 25s linear infinite;
+    }
+  }
+
+  /* Desktop animations - slower */
+  @media (min-width: 1025px) {
+    .animate-scroll-left {
+      animation: scroll-left 40s linear infinite;
     }
   }
 }
